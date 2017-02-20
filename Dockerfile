@@ -7,4 +7,4 @@ RUN bundle install
 ADD Gemfile.lock .
 ADD . .
 RUN rm -f tmp/pids/server.pid
-#CMD ["bundle", "exec","rails", "server", "-b", "0.0.0.0"]
+CMD ["bundle", "exec","rails", "server", "-b", "0.0.0.0"]
